@@ -141,6 +141,7 @@
 
 .photo__img {
   display: block;
+  width: 100%;
 
   @media (min-width: $medium-width) {
     height: 300px;
@@ -159,4 +160,8 @@
       height: 506px;
     }
   }
+}
+
+.photo__link {
+  cursor: pointer;
 }
