@@ -46,6 +46,8 @@
 }
 
 .page-footer__logo-img {
+  fill: $bluedark;
+
   &--tablet {
     @media (min-width: $large-width) {
       display: none;
@@ -61,40 +63,10 @@
   }
 
   &:hover {
-    path {
-      fill: $pink;
-    }
+    fill: $pink;
   }
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.copyright__link {
-  margin-left: 15px;
-  margin-top: -6px;
-
-  &:hover {
-    path {
-      fill: $bluedark;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.copyright__text {
-  margin-top: 7px;
-
-  @media (min-width: $medium-width) {
-    margin-top: 2px;
-  }
-
-  @media (min-width: $large-width) {
-    font-size: 18px;
-    margin-top: -3px;
   }
 }

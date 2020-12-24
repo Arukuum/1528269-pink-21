@@ -165,6 +165,7 @@
 .main-navigation__logo-img {
   padding-top: 21px;
   padding-bottom: 14px;
+  fill: $white;
 
   @media (min-width: $medium-width) {
     padding-top: 5px;
@@ -206,9 +207,7 @@
   }
 
   &:hover {
-    path {
-      fill: $pink;
-    }
+    fill: $pink;
   }
 
   &:active {
