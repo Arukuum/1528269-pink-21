@@ -30,6 +30,7 @@
   }
 
   &:active {
+    border: 3px solid rgba($bluedark, 0.4);
     opacity: 0.3;
   }
 }
