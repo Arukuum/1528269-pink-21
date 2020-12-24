@@ -136,6 +136,7 @@
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    cursor: pointer;
   }
 }
 
@@ -152,13 +153,7 @@
   }
 
   &--panorama {
-    @media (min-width: $medium-width) {
-      height: 509px;
-    }
-
-    @media (min-width: $large-width) {
-      height: 506px;
-    }
+    height: auto;
   }
 }
 
