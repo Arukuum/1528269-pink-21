@@ -133,36 +133,28 @@
 
 .tools__img {
   @media (max-width: $small-width) {
-    path {
-      fill: rgba($bluedark, 0.3);
-    }
+    fill: rgba($bluedark, 0.3);
 
     &:hover {
-      path {
-        fill: rgba($bluedark, 0.5);
-      }
+      fill: rgba($bluedark, 0.5);
     }
 
     &:active {
-      path {
-        fill: $pink;
-      }
+      fill: $pink;
     }
 
     &--active {
-      path {
-        fill: $pink;
-      }
+      fill: $pink;
 
       &:hover {
-        path {
-          fill: $pink;
-        }
+        fill: $pink;
       }
     }
   }
 
   @media (min-width: $medium-width) {
+    fill: $pink;
+
     &--cut {
       width: 22px;
       height: 22px;
