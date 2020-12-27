@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
     <header class="page-header">
       <nav class="page-header__main-navigation main-navigation main-navigation--closed main-navigation--no-js">
-        <a class="main-navigation__logo" aria-label="Логотип сайта Pink">
+        <a class="main-navigation__logo" href="index.html" aria-label="Логотип сайта Pink">
           <svg class="main-navigation__logo-img main-navigation__logo-img--mobile" width="74" height="23">
             <use xlink:href="img/symbols.svg#logo-white-mobile"></use>
           </svg>
@@ -51,7 +52,7 @@
           </div>
 
           <div class="gallery__photo photo gallery__photo--panorama">
-            <a class="photo__link photo__link--panorama">
+            <a class="photo__link photo__link--panorama" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -74,7 +75,7 @@
 
           <div class="gallery__photo-inner">
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
@@ -96,7 +97,7 @@
             </div>
 
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
@@ -118,7 +119,7 @@
             </div>
 
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
@@ -140,7 +141,7 @@
             </div>
 
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
@@ -162,7 +163,7 @@
             </div>
 
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
@@ -184,7 +185,7 @@
             </div>
 
             <div class="gallery__photo photo">
-              <a class="photo__link">
+              <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
@@ -234,7 +235,7 @@
                   <svg class="tools__img tools__img--cut tools__img--active" aria-label="Обрезать" width="44" height="44">
                     <use xlink:href="img/symbols.svg#tools-cut"></use>
                   </svg>
-                  <input class="visually-hidden" type="radio" name="cut" value="80">
+                  <input class="visually-hidden" type="range" name="cut" min="1" max="100" value="80"  step="1">
                 </label>
                 <div class="tools__range-controls tools__range-controls--cut">
                   <div class="tools__scale tools__scale--cut"></div>
@@ -247,7 +248,7 @@
                   <svg class="tools__img tools__img--color" aria-label="Цветокоррекция" width="48" height="43">
                     <use xlink:href="img/symbols.svg#tools-color"></use>
                   </svg>
-                  <input class="visually-hidden" type="radio" name="color" value="20">
+                  <input class="visually-hidden" type="range" name="color" min="1" max="100" value="20" step="1">
                 </label>
                 <div class="tools__range-controls tools__range-controls--color">
                   <div class="tools__scale tools__scale--color"></div>
@@ -260,7 +261,7 @@
                   <svg class="tools__img tools__img--contrast" aria-label="Контрастность" width="32" height="32">
                     <use xlink:href="img/symbols.svg#tools-contrast"></use>
                   </svg>
-                  <input class="visually-hidden" type="radio" name="contrast" value="50">
+                  <input class="visually-hidden" type="range" name="contrast" min="1" max="100" value="50" step="1">
                 </label>
                 <div class="tools__range-controls tools__range-controls--contrast">
                   <div class="tools__scale tools__scale--contrast"></div>
